@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: auto;
+    display: block;
+}
+
+body {
+    height: 100vh;
+    padding: 2% 0;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: whitesmoke;
+}
+
+.main {
+    height: auto;
+    width: 100vw;
+    padding: 2%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    height: auto;
+    flex: 1;
+    padding: 5%;
+}
+
+.first {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.second {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 15% 0;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20%;
+}
+
+#sedans {
+    color: hsl(31, 77%, 52%); 
+}
+
+#suv {
+    color: hsl(184, 100%, 22%); 
+}
+
+#luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+a {
+    color: inherit;
+    font-size: small;
+    font-family: sans-serif;
+}
+
+.link {
+    font-family: sans-serif;
+    font-size: small;
+    line-height: normal;
+    margin-top: 10%;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        margin-bottom: 3%;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        padding: 10%;
+    }
+
+    h1 {
+        margin: 10% 0;
+    }
+
+    button {
+        margin-top: 10%;
+    }
+}
